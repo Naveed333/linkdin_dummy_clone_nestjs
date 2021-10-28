@@ -7,7 +7,6 @@ import { FeedPostEntity } from './models/post.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([FeedPostEntity])],
   providers: [FeedService],
-  controllers: [FeedController]
+  controllers: [FeedController],
 })
-
-export class FeedModule { }
+export class FeedModule {}
