@@ -71,7 +71,7 @@ export class AuthService {
       switchMap((user: User) => {
         if (user) {
           // Create Jwt - credentials
-          return from();
+          return from(this.jwtService.signAsync({ user }));
         }
       }),
     );
