@@ -4,8 +4,8 @@ import { AuthController } from './controllers/auth.controller';
 import { UserEntity } from './models/user.entity';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { JwtModule } from '@nestjs/jwt';
-import { JwtGuard } from './gaurds/jwt.guard';
-import { JwtStrategy } from './gaurds/jwt.strategy';
+import { JwtGuard } from './guards/jwt.guard';
+import { JwtStrategy } from './guards/jwt.strategy';
 
 @Module({
   imports: [
